@@ -35,7 +35,7 @@
  * Pressing any key except the ones below turns it off immediately. */
 &zip_temp_layer {
     require-prior-idle-ms = <200>;
-    excluded-positions = <5 6 15 16 17 18 32 33 34 35>;
+    excluded-positions = <6 7 16 17 18 19 32 33 34 35>;
 };
 
 &pointing_listener {
@@ -43,7 +43,7 @@
         <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
         <&zip_temp_layer MOUSE 1000>;
 
-    /* Hold the scroll key on the MOUSE layer: ball scrolls instead of moving the cursor. */
+    /* Hold the scroll key (BSPC position) on the MOUSE layer: ball scrolls instead of moving the cursor. */
     scroller {
         layers = <SCROLL>;
         input-processors =
@@ -100,8 +100,8 @@
         mouse_layer {
             display-name = "Mouse";
             bindings = <
-&trans     &trans     &trans    &trans    &trans                                      &mkp MB4   &mkp MB5   &trans     &trans      &trans
-&trans     &trans     &trans    &trans    &trans                                      &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo SCROLL  &trans
+&trans     &trans     &trans    &trans    &trans                                      &trans     &mkp MB4   &mkp MB5   &trans     &trans
+&trans     &trans     &trans    &trans    &trans                                      &trans     &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo SCROLL
 &trans     &trans     &trans    &trans    &trans    &trans              &trans        &trans     &trans     &trans     &trans      &trans
 &trans     &trans     &trans    &trans    &trans    &trans              &trans        &trans     &trans     &trans     &trans      &trans
             >;
