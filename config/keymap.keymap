@@ -109,8 +109,8 @@
             display-name = "Func";
             bindings = <
 &kp F2         &kp F3         &kp F4         &kp F5        &kp F6                                &kp F7  &kp F8  &kp F9    &kp F10   &kp F11
-&kp F1         &none          &none          &none         &bt BT_CLR                            &none   &none   &none     &kp UP    &kp F12
-&bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &out OUT_USB  &out OUT_BLE  &trans          &none   &none   &none   &kp LEFT  &kp DOWN  &kp RIGHT
+&kp F1         &kp C_MUTE     &kp C_VOL_DN   &kp C_VOL_UP  &none                                 &none   &none   &none     &kp UP    &kp F12
+&bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &out OUT_USB  &out OUT_BLE  &trans          &bt BT_CLR  &none   &none   &kp LEFT  &kp DOWN  &kp RIGHT
 &trans         &trans         &trans         &trans        &trans        &trans          &trans  &trans  &trans  &trans    &none     &none
             >;
         };
