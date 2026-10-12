@@ -120,7 +120,7 @@
 &kp Q      &kp W      &kp E     &kp R     &kp T                                       &kp Y     &kp U      &kp I      &kp O     &kp P
 &kp A      &kp S      &kp D     &kp F     &kp G                                       &kp H     &kp J      &kp K      &kp L     &kp RET
 &kp Z      &kp X      &kp C     &kp V     &kp B     &mo NUM             &kp CAPS      &kp N     &kp M      &kp COMMA  &kp DOT   &kp BSPC
-&kp LCTRL  &kp LSHFT  &kp LALT  &kp LGUI  &lt SYM INT5  &kp SPACE       &kp SPACE     &lt FUNC INT4  &none  &none      &kp TAB   &kp FSLH
+&kp LCTRL  &kp LGUI   &kp LALT  &kp LSHFT &lt SYM INT5  &kp SPACE       &kp SPACE     &lt FUNC INT4  &none  &none      &kp TAB   &kp FSLH
             >;
         };
 
