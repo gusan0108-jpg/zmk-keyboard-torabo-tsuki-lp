@@ -35,10 +35,12 @@
 
 /* Auto mouse layer: moving the ball activates MOUSE for 1000 ms.
  * Pressing any key except the ones below turns it off immediately.
- * Kept: mouse buttons/scroll/zoom/precise, Z X C V (for Ctrl+Z/X/C/V), Ctrl Shift Alt Win. */
+ * Kept: mouse buttons/scroll/zoom/precise, Z X C V (for Ctrl+Z/X/C/V), Ctrl Shift Alt Win.
+ * Right Space (38) is kept too, but on the MOUSE layer it is bound to &tog MOUSE:
+ * it only leaves the mouse layer and never types a space. */
 &zip_temp_layer {
     require-prior-idle-ms = <200>;
-    excluded-positions = <6 7 9 15 16 17 18 19 20 21 22 23 32 33 34 35>;
+    excluded-positions = <6 7 9 15 16 17 18 19 20 21 22 23 32 33 34 35 38>;
 };
 
 /* Thumb layer keys: tap = IME off (無変換) / IME on (変換), hold = layer. */
@@ -160,7 +162,7 @@
 &trans     &trans     &trans    &trans    &trans                                      &trans     &mkp MB4   &mkp MB5   &trans     &zoom_hold
 &trans     &trans     &trans    &trans    &trans                                      &mo PRECISE  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo SCROLL
 &kp Z      &kp X      &kp C     &kp V     &trans    &trans              &trans        &trans     &trans     &trans     &trans      &trans
-&trans     &trans     &trans    &trans    &trans    &trans              &trans        &trans     &trans     &trans     &trans      &trans
+&trans     &trans     &trans    &trans    &trans    &trans              &tog MOUSE    &trans     &trans     &trans     &trans      &trans
             >;
         };
 
